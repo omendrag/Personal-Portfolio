@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - 3D Animation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+            overflow: hidden;
+        }
+
+        .about-container {
+            max-width: 850px;
+            margin: auto;
+            padding: 40px;
+            background: rgba(20, 20, 20, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 0 30px rgba(162, 89, 255, 0.6);
+            transform: perspective(1000px) rotateX(10deg);
+            transition: 0.5s ease-in-out;
+        }
+
+        .about-container:hover {
+            transform: perspective(1000px) rotateX(0deg) translateY(-10px);
+            box-shadow: 0 0 50px rgba(162, 89, 255, 0.9);
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            color: #a259ff;
+            text-shadow: 0px 0px 10px rgba(162, 89, 255, 0.8);
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #ddd;
+            margin-bottom: 20px;
+        }
+
+        .skills {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .skills span {
+            background: #222;
+            color: #a259ff;
+            padding: 10px 18px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: 0.3s;
+        }
+
+        .skills span:hover {
+            background: #a259ff;
+            color: #fff;
+            transform: scale(1.1);
+            box-shadow: 0 0 10px rgba(162, 89, 255, 0.8);
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.8rem;
+            transition: 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #a259ff;
+            transform: scale(1.3);
+        }
+        
+        /* 3D Floating Effect */
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .about-container {
+            animation: floating 3s infinite ease-in-out;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="about-container">
+        <h2>About Me</h2>
+        <p>
+            Hi, I'm <b>Omendra Pratap Singh</b>, a passionate Tech Enthusiast, Web Developer, and Entrepreneurship Leader.  
+            Currently, I'm a 2nd-year BTech CSE student at LNCT University, Bhopal.  
+            I love exploring technology, data analytics, and contributing to developer communities.
+        </p>
+
+        <p>
+            I'm leading E-Cell LNCTU and have played a key role in events like NEC 2024 and the Eureka Pitching Competition.  
+            My journey includes contributions to Google Developer Group, Microsoft Learn Student Ambassador, and GSSoC, and I actively participate in **hackathons and tech events**.
+        </p>
+
+        <p>When I'm not coding, you'll find me playing basketball 🏀 or networking with innovative minds 🚀.</p>
+
+        <div class="skills">
+            <span>Web Development</span>
+            <span>C/C++</span>
+            <span>Python</span>
+          
+            <span>Entrepreneurship</span>
+            <span>Community Building</span>
+        </div>
+
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/omendra-pratap-singh-a54735293/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:omsinghbaghel190@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://github.com/omendrag" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+    </div>
+
+</body>
+</html>

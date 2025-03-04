@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omendra Pratap Singh - Developer Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+            font-family: "Poppins", sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(6, 2, 67);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: rgb(153, 153, 226);
+            font-size: 1.05rem;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 130px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 2rem;
+        }
+
+        .rightSection img {
+            width: 80%;
+        }
+
+        .purple {
+            color: rgb(170, 107, 228);
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        #element {
+            color: rgb(170, 107, 228);
+        }
+
+        /* Work Experience Section */
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .secondSection h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .experience {
+            display: flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            width: 80%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .experience:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 4px 10px rgba(170, 107, 228, 0.5);
+        }
+
+        .experience-icon {
+            width: 60px;
+            height: 60px;
+            margin-right: 20px;
+        }
+
+        .experience-details {
+            text-align: left;
+        }
+
+        .experience-details h3 {
+            color: rgb(170, 107, 228);
+            font-size: 1.5rem;
+        }
+
+        .experience-details h4 {
+            font-size: 1rem;
+            color: gray;
+        }
+
+        .experience-details p {
+            font-size: 0.9rem;
+            color: white;
+            margin-top: 5px;
+        }
+    
+.skillsSection {
+    max-width: 80vw;
+    margin: auto;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.skillsSection h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: rgb(170, 107, 228);
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.skill {
+    width: 80%;
+}
+
+.skill h3 {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress {
+    height: 100%;
+    background: rgb(170, 107, 228);
+    text-align: right;
+    padding-right: 5px;
+    line-height: 10px;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: width 1s ease-in-out;
+}
+
+.contactSection {
+    max-width: 80vw;
+    margin: auto;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.contactSection h1 {
+    font-size: 2rem;
+    color: rgb(170, 107, 228);
+    margin-bottom: 10px;
+}
+
+.contactSection p {
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.contact-link img {
+    width: 30px;
+    height: 30px;
+    filter: invert(1);
+}
+
+.contact-link:hover {
+    color: rgb(170, 107, 228);
+    transform: scale(1.1);
+}
+
+
+.contactSection form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.contactSection input,
+.contactSection textarea {
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 1rem;
+    outline: none;
+}
+
+.contactSection button {
+    background: rgb(170, 107, 228);
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contactSection button:hover {
+    background: rgb(136, 77, 200);
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="left">Omendra Pratap Singh - Portfolio</div>
+        <div class="right">
+            <ul>
+                <li><a href="om2.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.pdf.pdf">Resume</a></li>
+                <li><a href="om2.html">Projects</a></li>
+                <li><a href="contactdetails.html">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My Name is <span class="purple">Omendra Pratap Singh</span>
+                <div> I am a Passionate</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="bg.png.jpeg" alt="Profile Picture">
+            </div>
+        </section>
+
+        <hr>
+
+     
+        <section class="secondSection">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="experience">
+                    <img src="ecell.png.png" alt="Developer Icon" class="experience-icon">
+                    <div class="experience-details">
+                        <h3>Lead and Founder</h3>
+                        <h4>Entrepreneurs| 2023 - 2024</h4>
+                        <p> Represent LNCTU in NEC IIT Bombay & other national competitions.</p>
+                        <p>Connect with entrepreneurs, investors, and industry experts.</p>
+                    </div>
+                </div>
+
+                <div class="experience">
+                    <img src="lncte.png" alt="Video Editor Icon" class="experience-icon">
+                    <div class="experience-details">
+                        <h3>Google Developer Group on Campus LNCTE</h3>
+                        <h4>Contributor | 2024 - Present</h4>
+                        <p> Connect with experts, Google Developer Experts (GDEs), and tech communities.</p>
+                        <p>Speak at events, mentor others, and contribute to open source.</p>
+                    </div>
+                </div>
+
+                <div class="experience">
+                    <img src="mlsalogo.png" alt="MLSA Icon" class="experience-icon">
+                    <div class="experience-details">
+                        <h3>Microsoft Learn Student Ambassador</h3>
+                        <h4>Microsoft | 2024 - Present</h4>
+                        <p>Engaging with student communities to promote Microsoft technologies, hosting events, and mentoring students in cloud computing and AI.</p>
+                    </div>
+                </div>
+                <div class="experience">
+                    <img src="khj.png.jpg" alt="MLSA Icon" class="experience-icon">
+                    <div class="experience-details">
+                        <h3>Contributor and Campus Ambassador</h3>
+                        <h4>GSSoC  | 2024 - 2024</h4>
+                        <p>Gain hands-on experience in real-world coding projects.</p>
+                        <p>Connect with mentors, industry experts, and fellow developers.</p>
+                    </div>
+            </div>
+        </section>
+        <hr>
+        
+<section class="skillsSection">
+    <h1>Skills <Section></Section></h1>
+    <div class="skills-container">
+        <div class="skill">
+            <h3>HTML & CSS</h3>
+            <div class="progress-bar">
+                <div class="progress" style="width: 90%;">85%</div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <h3>JavaScript</h3>
+            <div class="progress-bar">
+                <div class="progress" style="width: 80%;">80%</div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <h3>Python</h3>
+            <div class="progress-bar">
+                <div class="progress" style="width: 75%;">50%</div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <h3>C++</h3>
+            <div class="progress-bar">
+                <div class="progress" style="width: 70%;">60%</div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <h3>Data Structure and Algorithm</h3>
+            <div class="progress-bar">
+                <div class="progress" style="width: 85%;">40%</div>
+            </div>
+        </div>
+    </div>
+</section>
+<hr>
+
+<section id="contact" class="contactSection">
+    <h1>Contact Me</h1>
+    <p>Let's connect! Feel free to reach out for collaborations or any inquiries.</p>
+
+    <div class="contact-info">
+        <a href="https://www.linkedin.com/in/omendra-pratap-singh-a54735293/" target="_blank" class="contact-link">
+            <img src="linkdin.png" alt="LinkedIn"> LinkedIn
+        </a>
+        <a href="mailto:omsinghbaghel190@gmail.com" class="contact-link">
+            <img src="bnnbn.png" alt="Gmail"> Gmail
+        </a>
+        <a href="https://wa.me/8253038850" target="_blank" class="contact-link">
+            <img src="whatsapp.png" alt="WhatsApp"> WhatsApp
+        </a>
+    </div>
+
+    <form action="https://formspree.io/f/mbldaaza" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+
+</main>
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Video Editor', 'Web Developer', 'Tech Enthusiast'],
+            typeSpeed: 50,
+            backSpeed: 25,
+            loop: true
+        });
+    </script>
+</body>
+<script>
+    document.querySelectorAll('nav ul li a').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            if (this.getAttribute('href').startsWith("#")) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+</script>
+
+
+</html>

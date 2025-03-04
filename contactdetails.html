@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - Omendra Pratap Singh</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(6, 2, 67);
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover,
+        nav ul li a.active {
+            color: rgb(153, 153, 226);
+            font-size: 1.05rem;
+        }
+
+        .contactSection {
+            max-width: 80vw;
+            margin: auto;
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .contactSection h1 {
+            font-size: 2rem;
+            color: rgb(170, 107, 228);
+            margin-bottom: 10px;
+        }
+
+        .contactSection p {
+            font-size: 1rem;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .contact-link {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+            transition: 0.3s;
+        }
+
+        .contact-link img {
+            width: 30px;
+            height: 30px;
+            filter: invert(1);
+        }
+
+        .contact-link:hover {
+            color: rgb(170, 107, 228);
+            transform: scale(1.1);
+        }
+
+        .contactSection form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .contactSection input,
+        .contactSection textarea {
+            width: 80%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            font-size: 1rem;
+            outline: none;
+        }
+
+        .contactSection button {
+            background: rgb(170, 107, 228);
+            color: white;
+            font-size: 1rem;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .contactSection button:hover {
+            background: rgb(136, 77, 200);
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="left">Omendra Pratap Singh - Portfolio</div>
+        <div class="right">
+            <ul>
+                <li><a href="om2.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.pdf.pdf">Resume</a></li>
+                <li><a href="om2.html">Projects</a></li>
+                <li><a href="contactdetails.html" class="active">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="contactSection">
+        <h1>Contact Me</h1>
+        <p>Let's connect! Feel free to reach out for collaborations or any inquiries.</p>
+
+        <div class="contact-info">
+            <a href="https://www.linkedin.com/in/omendra-pratap-singh-a54735293/" target="_blank" class="contact-link">
+                <img src="linkdin.png" alt="LinkedIn"> LinkedIn
+            </a>
+            <a href="mailto:omsinghbaghel190@gmail.com" class="contact-link">
+                <img src="bnnbn.png" alt="Gmail"> Gmail
+            </a>
+            <a href="https://wa.me/8253038850" target="_blank" class="contact-link">
+                <img src="whatsapp.png" alt="WhatsApp"> WhatsApp
+            </a>
+        </div>
+
+        <form action="https://formspree.io/f/mbldaaza" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+</body>
+
+</html>
