@@ -11,7 +11,6 @@ You can check out my portfolio here: [omendrag.github.io/Personal-Portfolio/](#)
 
 ## 🛠️ Technologies & Skills
 - **Frontend:** HTML, CSS, JavaScript
-- **Backend:** Python, MySQL
 - **Development Tools:** Git, VS Code
 - **Other:** Data Structures & Algorithms, Video Editing
 
